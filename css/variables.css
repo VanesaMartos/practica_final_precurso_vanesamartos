@@ -1,0 +1,8 @@
+:root {
+    --font: 'Rasa', serif;
+    --mainColor: #414141;
+    --secondaryColor: #c9c9c9;
+    --maxWidth: 87.5em;
+    --space: 1.25em;
+    --btnColor: #eeeeee;
+}
