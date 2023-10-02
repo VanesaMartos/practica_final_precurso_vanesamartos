@@ -51,7 +51,7 @@ header .container {
     flex-wrap: wrap;
     justify-content: space-between;
     font-size: 1.75em;
-    padding: 0 1.25em;
+    padding: 0 1.25rem;
 }
 
 header nav.container>a {
@@ -84,6 +84,14 @@ header nav.container .menu a {
 header nav.container .menu .activo {
     font-weight: 500;
 }
+
+/* Footer*/
+
+footer .container {
+    padding: 0rem 1.25rem;
+    color: var(--secondaryColor);
+}
+
 
 
 
@@ -128,5 +136,10 @@ header nav.container .menu .activo {
     header .container {
         padding: 0;
     }
+
+    footer .container {
+        padding: 0;
+    }
+
 
 }
