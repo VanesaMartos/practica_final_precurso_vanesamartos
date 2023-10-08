@@ -114,7 +114,7 @@ footer .container {
 /* Section: projects */
 
 main section {
-    padding: var(--space) 1.25rem;
+    padding: calc(var(--space) * 4) 1.25rem;
 }
 
 main #projects .grid {
@@ -188,7 +188,31 @@ main .more a {
     border-bottom: 1px solid var(--secondaryColor);
 }
 
+/* Section: our expertise */
+main #expertise .flex {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space);
+}
 
+main #expertise article {
+    text-align: center;
+}
+
+main #expertise article figure {
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+main #expertise article h3 {
+    font-size: 2rem;
+    padding: var(--space) 0;
+}
+
+main #expertise article p {
+    color: var(--secondaryColor);
+    font-size: 1.25em;
+}
 
 
 
@@ -238,6 +262,20 @@ main .more a {
         grid-column: 2;
         grid-row: 1/3;
     }
+
+    main #expertise .flex {
+        flex-direction: row;
+    }
+
+    main #expertise article {
+        text-align: left;
+    }
+
+    main #expertise article figure {
+        max-width: 100px;
+        margin: 0;
+    }
+
 
 }
 
