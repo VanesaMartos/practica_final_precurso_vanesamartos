@@ -90,6 +90,7 @@ header nav.container .menu .activo {
 footer .container {
     padding: 0rem 1.25rem;
     color: var(--secondaryColor);
+    margin-bottom: 1.875rem;
 }
 
 
@@ -296,11 +297,18 @@ main #news .flex article a h3 {
     font-size: 2rem;
 }
 
+/* Section: get in touch */
 
+main #touch p {
+    font-size: 1.8rem;
+}
 
+main #touch p a {
+    text-decoration: none;
+    color: var(--mainColor);
+    border-bottom: 1px solid var(--secondaryColor);
 
-
-
+}
 
 
 
@@ -396,6 +404,12 @@ main #news .flex article a h3 {
     main #news article figure {
         max-height: 200px;
         overflow: hidden;
+    }
+
+    /* Section: get in touch */
+
+    main #touch p {
+        width: 50%;
     }
 
 }
