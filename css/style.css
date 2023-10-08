@@ -189,6 +189,7 @@ main .more a {
 }
 
 /* Section: our expertise */
+
 main #expertise .flex {
     display: flex;
     flex-direction: column;
@@ -212,6 +213,65 @@ main #expertise article h3 {
 main #expertise article p {
     color: var(--secondaryColor);
     font-size: 1.25em;
+}
+
+/* Section: price range */
+
+main #price sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+main #price .flex {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space) * 2);
+}
+
+main #price .flex article {
+    text-align: center;
+}
+
+main #price .flex article h3 {
+    font-size: 2em;
+}
+
+main #price .flex article .price {
+    font-size: 3em;
+    margin: var(--space) 0;
+}
+
+main #price .flex article hr {
+    border: 0.5px solid var(--secondaryColor);
+    margin-bottom: var(--space);
+}
+
+main #price .flex article ul {
+    padding-bottom: var(--space);
+}
+
+main #price .flex article ul li {
+    margin-bottom: 0.625rem;
+    font-size: 1.5rem;
+
+    & span {
+        color: var(--secondaryColor);
+    }
+
+}
+
+.buy {
+    background-color: var(--btnColor);
+    display: inline-block;
+    padding: var(--space);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--mainColor);
+    transition: 0.5s;
+
+    &:hover {
+        background-color: var(--secondaryColor);
+    }
 }
 
 
@@ -253,6 +313,8 @@ main #expertise article p {
         max-width: 43.75rem;
     }
 
+    /* Section: projects */
+
     main #projects .grid {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -263,11 +325,14 @@ main #expertise article p {
         grid-row: 1/3;
     }
 
+    /* Section: our expertise */
+
     main #expertise .flex {
         flex-direction: row;
     }
 
     main #expertise article {
+        width: 100%;
         text-align: left;
     }
 
@@ -276,8 +341,21 @@ main #expertise article p {
         margin: 0;
     }
 
+    /* Section: price range */
+
+    main #price .flex {
+        flex-direction: row;
+    }
+
+    main #price .flex article {
+        width: 100%;
+        text-align: left;
+    }
 
 }
+
+
+
 
 @media(min-width: 87.5rem) {
     header .container {
