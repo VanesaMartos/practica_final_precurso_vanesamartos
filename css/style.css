@@ -217,9 +217,9 @@ main #expertise article p {
 
 /* Section: price range */
 
-main #price sup {
+main sup {
     vertical-align: super;
-    font-size: smaller;
+    font-size: 75%;
 }
 
 main #price .flex {
@@ -280,6 +280,8 @@ main #price .flex article ul li {
 
 /* Header */
 @media(min-width: 48rem) {
+
+    /* 768px */
     header nav.container #btnMenu {
         display: none;
     }
@@ -349,6 +351,10 @@ main #price .flex article ul li {
 
     main #price .flex article {
         width: 100%;
+        text-align: left;
+    }
+
+    main section h2 {
         text-align: left;
     }
 
