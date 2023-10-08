@@ -114,7 +114,7 @@ footer .container {
 /* Section: projects */
 
 main section {
-    padding: var(--space) 1.25rem;
+    padding: calc(var(--space) * 4) 1.25rem;
 }
 
 main #projects .grid {
