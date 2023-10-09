@@ -344,10 +344,11 @@ main #team .text {
     text-align: center;
 
     & h5 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     & p {
+        font-size: 1.25rem;
         color: var(--secondaryColor);
     }
 }
@@ -357,7 +358,7 @@ main #team .hiring {
     background-color: var(--btnColor);
 
     & p {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         text-align: center;
         color: var(--mainColor);
 
