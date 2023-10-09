@@ -208,7 +208,7 @@ main #expertise article figure {
 
 main #expertise article h3 {
     font-size: 2rem;
-    padding: var(--space) 0;
+    padding: var(--space) 0 calc(var(--space) * 0.25) 0;
 }
 
 main #expertise article p {
@@ -369,6 +369,9 @@ main #team .hiring {
     }
 }
 
+/* Section: our expertise */
+/* Se ajusta el padding-bottom del h3; se hereda el resto de los estilos de index.html. */
+
 
 
 /* Media queries*/
@@ -478,6 +481,16 @@ main #team .hiring {
 
     main #team .flex article {
         width: calc(25% - var(--space));
+    }
+
+    /* Section: our expertise */
+
+    main #expertise .expertise {
+        flex-wrap: wrap;
+    }
+
+    main #expertise .expertise article {
+        width: calc(33.333% - var(--space));
     }
 
 }
