@@ -32,6 +32,8 @@ body {
     font-size: 1em;
 }
 
+
+/* HOME */
 /* Header */
 
 header {
@@ -93,7 +95,6 @@ footer .container {
     margin-bottom: 1.875rem;
 }
 
-
 /* Section: hero */
 
 .hero {
@@ -142,7 +143,6 @@ main #projects .grid article:first-child {
     height: 45vh;
     overflow: hidden;
 }
-
 
 main #projects .grid article:nth-child(2) {
     background-image: url(../images/bottle-gradient-2.jpg);
@@ -310,15 +310,73 @@ main #touch p a {
 
 }
 
+/* ABOUT */
+/* Section: meet the team */
+
+main #team .flex {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space);
+}
+
+main #team .flex article {
+    display: flex;
+    flex-direction: column;
+}
+
+main #team .rotate figure {
+    transform: rotate(45deg) scale(0.75);
+    overflow: hidden;
+    transition: 1s;
+}
+
+main #team .rotate figure img {
+    transform: rotate(-45deg) scale(1.75);
+    transition: 1s;
+}
+
+main #team .rotate:hover :is(figure, img) {
+    transform: rotate(0deg);
+}
+
+main #team .text {
+    padding: calc(var(--space) * 1.25) 0;
+    text-align: center;
+
+    & h5 {
+        font-size: 1.25rem;
+    }
+
+    & p {
+        color: var(--secondaryColor);
+    }
+}
+
+main #team .hiring {
+    padding: 5rem 1.25rem;
+    background-color: var(--btnColor);
+
+    & p {
+        font-size: 1.25rem;
+        text-align: center;
+        color: var(--mainColor);
+
+        & a {
+            text-decoration: none;
+            color: var(--mainColor);
+            border-bottom: 1px solid var(--secondaryColor);
+        }
+    }
+}
 
 
 
 /* Media queries*/
 
-/* Header */
+
 @media(min-width: 48rem) {
 
-    /* 768px */
+    /* Header */
     header nav.container #btnMenu {
         display: none;
     }
@@ -332,7 +390,6 @@ main #touch p a {
         width: 20%;
         order: 2;
         text-align: right;
-
     }
 
     header nav.container .menu li {
@@ -410,6 +467,17 @@ main #touch p a {
 
     main #touch p {
         width: 50%;
+    }
+
+    /* Section: meet the team */
+
+    main #team .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main #team .flex article {
+        width: calc(25% - var(--space));
     }
 
 }
