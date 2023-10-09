@@ -373,13 +373,60 @@ main #team .hiring {
 /* Section: our expertise */
 /* Se ajusta el padding-bottom del h3; se hereda el resto de los estilos de index.html. */
 
+/* Section: the way we work */
+
+main #way_work .container ul:not(:first-of-type) {
+    display: none;
+}
+
+main #way_work .container ul {
+    display: flex;
+    flex-direction: row;
+    padding: var(--space) 0;
+}
+
+main #way_work .container ul li {
+    width: 100%;
+    font-size: 1.5rem;
+
+    & a {
+        text-decoration: none;
+        color: var(--mainColor);
+        display: block;
+        text-align: center;
+        padding-bottom: calc(var(--space) * 0.5);
+        border-bottom: 3px solid var(--mainColor);
+    }
+}
+
+main #way_work .container ul li:not(:first-child) a {
+    color: var(--secondaryColor);
+    border-bottom: none;
+}
+
+main #way_work .flex article:not(:first-of-type) {
+    display: none;
+}
+
+main #way_work .flex article h3 {
+    font-size: 2rem;
+    padding: var(--space) 0;
+    text-align: center;
+
+}
+
+main #way_work .flex article p {
+    font-size: 1.25rem;
+    line-height: 1.25em;
+}
+
 
 
 /* Media queries*/
 
-
 @media(min-width: 48rem) {
 
+    /* HOME */
     /* Header */
     header nav.container #btnMenu {
         display: none;
@@ -473,6 +520,7 @@ main #team .hiring {
         width: 50%;
     }
 
+    /*ABOUT*/
     /* Section: meet the team */
 
     main #team .flex {
@@ -492,6 +540,24 @@ main #team .hiring {
 
     main #expertise .expertise article {
         width: calc(33.333% - var(--space));
+    }
+
+    /* Section: the way we work */
+
+    main #way_work .container ul:first-of-type {
+        display: none;
+    }
+
+    main #way_work .container ul:not(:first-of-type) {
+        display: flex;
+    }
+
+    main #way_work .flex article h3 {
+        display: none;
+    }
+
+    main #way_work .flex article p {
+        padding-top: calc(var(--space) * 0.5);
     }
 
 }
